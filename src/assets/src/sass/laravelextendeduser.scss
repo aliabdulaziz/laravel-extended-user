@@ -1,0 +1,72 @@
+.btn-100 {
+	width: 100px;
+}
+
+.field-bg {
+	background-color: #F1F1F1 !important;
+	border-radius: 4px;
+}
+
+.custom-badge {
+	padding: 5px 7px;
+	color: #FAFAFA;
+	border-radius: 4px;
+}
+
+$user-profile-image-width: 128px;
+$user-profile-image-height: 128px;
+
+.user-profile {
+	.user-profile-image {
+		height: $user-profile-image-height;
+		.user-profile-image--default,
+		.user-profile-image--selection,
+		.user-profile-image--button {
+			display: block;
+			position: absolute;
+			width: $user-profile-image-width;
+			height: $user-profile-image-height;
+			margin-left: auto;
+			margin-right: auto;
+			left: 0;
+			right: 0;
+			overflow: hidden;
+			border-radius: 50%;
+		}
+		.user-profile-image--default {
+			img {
+				width: $user-profile-image-width;
+				height: $user-profile-image-height;
+			}
+		}
+		.user-profile-image--button {
+			input[type="file"] {
+				display: block;
+				width: $user-profile-image-width;
+				height: $user-profile-image-height;
+				border-radius: 50%;
+				font-size: 0;
+				opacity: 0;
+				cursor: pointer;
+			}
+			.user-profile-image--button-label {
+				font-size: 18px;
+			    margin-top: -48px;
+			    text-align: center;
+			    padding: 10px 0;
+			    background-color: rgba(0,0,0,.5);
+				color: #FAFAFA;
+			}
+		}
+	}
+	.add-new-field-button,
+	.remove-field-button {
+		font-family: fantasy !important;
+	    width: 36px;
+	    height: 36px;
+	    line-height: 0;
+	    font-size: 25px;
+	    border-radius: 50%;
+	    padding: 13px 5px 15px 7px;
+	}
+}
